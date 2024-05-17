@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TO DO List</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            display: flex;
+            background-color: rgb(111, 31, 182);
+            width: 100%;
+            min-height: 100vh;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            background-color: rgb(80, 28, 130);
+            width: 30%;
+            min-height: 210px;
+            border-radius: 2.5%;
+            box-shadow: 3px 3px 6px black;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        button {
+            display: block;
+            box-sizing: border-box;
+            width: 30%;
+            padding-block: 16px;
+            background-color: whitesmoke;
+            font-weight: 500;
+            font-size: 30px;
+            transition: width 0.6s;
+            border:1px solid white;
+            border-radius:4px;
+        }
+        button:hover {
+            background-color:rgba(0, 0, 0, 0.323);
+            color:white;
+        }
+        @media (max-width:1100px) {
+            button {
+                width:100%;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <H1>TO DO List</H1>
+            <button onclick="window.location.href='todo_list1.html';">ENTER</button>
+        </div>
+    </div>
+</body>
+
+</html>
